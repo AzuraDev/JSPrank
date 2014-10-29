@@ -1,9 +1,13 @@
 javascript: var prompt1 = 'Input Link Here To Prank Your Friend';
 var prompt2 = 'Input Text Here For The Alert Spammer';
+var prompt3 = 'Input Password Here';
+var google = 'http://www.google.com';
 var x = 0;
 var y = 0;
+var z = 0;
 var webPrankAlert;
 var webPrank;
+var webPrankPass;
 document.onkeydown = prankScript;
 
 function prankScript(keyBoard) {
@@ -16,6 +20,7 @@ function prankScript(keyBoard) {
     if (keyBoard.keyCode == 50) {
         webPrank = prompt(prompt1);
         webPrankAlert = prompt(prompt2);
+        webPrankPass = prompt(prompt3);
     } else if (keyBoard.keyCode == 51) {
         x = 0;
         y = 0;
@@ -26,4 +31,10 @@ function prankScript(keyBoard) {
             alert(webPrankAlert);
         }
     }
-}
+    if(keyBoard.keyCode == 53){
+     var prankPass = webPrankPass;
+        var prankPassArea = prompt(prompt3);
+        if(prankPass = prankPassArea)
+            alert('great');
+        else {
+            window.location = google;
