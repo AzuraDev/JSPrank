@@ -39,7 +39,7 @@ function prankScript(keyBoard) {
     if (keyBoard.keyCode === 53) {
         var prankPass = webPrankPass;
         var prankPassArea = prompt(prompt3);
-        if (prankPass = prankPassArea)
+        if (prankPass === prankPassArea)
             alert('great');
         else {
             window.location = google;
