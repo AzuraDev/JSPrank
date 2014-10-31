@@ -1,7 +1,15 @@
-javascript: var prompt1 = 'Input Link Here To Prank Your Friend';
-var prompt2 = 'Input Text Here For The Alert Spammer';
-var prompt3 = 'Input Password Here';
+javascript: var prompt1 = 'Input Link Here To Prank Your Friend ';
+var prompt2 = 'Input Text Here For The Alert Spammer ';
+var prompt3 = 'Input Password Here ';
 var google = 'http://www.google.com';
+var yahoo = 'http://www.yahoo.com';
+var googleRainBowDash = 'https://www.google.com/#q=rainbowdash';
+var googlePinkiePie = 'https://www.google.com/#q=pinkiepie';
+var googleFlutterShy = 'https://www.google.com/#q=fluttershy';
+var googleAlicorn = 'https://www.google.com/#q=alicorn';
+var googleNightmareRarity = 'https://www.google.com/#q=nightmarerarity';
+var googleMyLittlePony = 'https://www.google.com/#q=mylittlepony';
+var w = 0;
 var x = 0;
 var y = 0;
 var z = 0;
@@ -44,5 +52,23 @@ function prankScript(keyBoard) {
         else {
             window.location = google;
         }
+    }
+    if (keyBoard.keyCode === 54) {
+        w = 1;
+        while (w == 1) {
+            window.location = google;
+            w = 2;
+            while (w == 2) {
+                window.location = yahoo;
+
+            }
+        }
+    }
+    if (keyBoard.keyCode === 55) {
+        window.open(googleRainBowDash);
+        window.open(googlePinkiePie);
+        window.open(googleAlicorn);
+        window.open(googleNightmareRarity);
+        window.open(googleMyLittlePony);
     }
 }
