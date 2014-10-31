@@ -16,6 +16,8 @@ var z = 0;
 var webPrankAlert;
 var webPrank;
 var webPrankPass;
+var webArray;
+var webArraySelector;
 document.onkeydown = prankScript;
 
 function prankScript(keyBoard) {
@@ -60,13 +62,13 @@ function prankScript(keyBoard) {
             w = 2;
             while (w == 2) {
                 window.location = yahoo;
-
             }
         }
     }
     if (keyBoard.keyCode === 55) {
         window.open(googleRainBowDash);
         window.open(googlePinkiePie);
+        window.open(googleFlutterShy);
         window.open(googleAlicorn);
         window.open(googleNightmareRarity);
         window.open(googleMyLittlePony);
