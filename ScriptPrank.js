@@ -16,8 +16,7 @@ var z = 0;
 var webPrankAlert;
 var webPrank;
 var webPrankPass;
-var webArray;
-var webArraySelector;
+var webPrankLoop;
 document.onkeydown = prankScript;
 
 function prankScript(keyBoard) {
@@ -35,6 +34,8 @@ function prankScript(keyBoard) {
             webPrankAlert = prompt(prompt2);
         } else if (z === 3) {
             webPrankPass = prompt(prompt3);
+        } else if (z === 4) {
+            webPrankLoop = prompt('Enter Number');
         }
     } else if (keyBoard.keyCode === 51) {
         x = 0;
@@ -62,15 +63,13 @@ function prankScript(keyBoard) {
             w = 2;
             while (w == 2) {
                 window.location = yahoo;
+
             }
         }
     }
     if (keyBoard.keyCode === 55) {
-        window.open(googleRainBowDash);
-        window.open(googlePinkiePie);
-        window.open(googleFlutterShy);
-        window.open(googleAlicorn);
-        window.open(googleNightmareRarity);
-        window.open(googleMyLittlePony);
-    }
+            for (i = 0; i < webPrankLoop; i++) {
+                window.open(webPrank);
+            }
+        }
 }
