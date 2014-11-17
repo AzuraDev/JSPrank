@@ -11,7 +11,6 @@ var googleNightmareRarity = 'https://www.google.com/#q=nightmarerarity';
 var googleMyLittlePony = 'https://www.google.com/#q=mylittlepony';
 var w = 0;
 var x = 0;
-var y = 0;
 var z = 0;
 var webPrankAlert;
 var webPrank;
@@ -42,8 +41,7 @@ function prankScript(keyBoard) {
         y = 0;
         window.location.reload(true);
     } else if (keyBoard.keyCode === 52) {
-        y = 1;
-        while (y === 1) {
+        while (true) {
             alert(webPrankAlert);
         }
     }
@@ -57,11 +55,9 @@ function prankScript(keyBoard) {
         }
     }
     if (keyBoard.keyCode === 54) {
-        w = 1;
-        while (w == 1) {
+        while (true) {
             window.location = google;
-            w = 2;
-            while (w == 2) {
+            while (true) {
                 window.location = yahoo;
 
             }
